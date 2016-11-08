@@ -2,18 +2,28 @@
 <html>
 <head>
     <title>This is the simple page</title>
-<style>
-body {
-    background-color: lightblue;
-}
-</style>
-
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://intercoolerreleases-leaddynocom.netdna-ssl.com/intercooler-1.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Hello World!</h1>
 
 <p>This page has a light blue background color!</p>
-
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
 </body>
 </html>
