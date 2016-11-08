@@ -10,6 +10,14 @@
                 $(this).hide();
             });
         });
+
+        $.mockjax({
+            url: "/click",
+            responseTime: 1500,
+            response: function (settings) {
+                this.responseText = "Confirmed Click!";
+            }
+        });
     </script>
     <style>
         body {
@@ -25,5 +33,20 @@
 <p>If you click on me, I will disappear.</p>
 <p>Click me away!</p>
 <p>Click me too!</p>
+
+<div id="confirm-me" class="btn btn-primary" data-toggle="modal" data-target="#msgmodal">Click Me <i id='demo-spinner' class="ic-indicator fa fa-spinner fa-spin" style="display: none;"></i></div>
+
+<div class="modal fade" id="msgmodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <h4 class="modal-title">Are you sure you want to proceed?</h4>
+            </div>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" ic-post-to='/click' ic-target='#confirm-me' ic-indicator="#demo-spinner">Confirm</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
