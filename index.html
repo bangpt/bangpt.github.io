@@ -3,42 +3,47 @@
 
 <head>
   <title>Vacation World</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
   <style>
-    .float {
-    float: left;
-    }
-    .foo {
-    padding-top: 10px;
-    }
-    .bar {
-    width: 30%;
-    }
-    .baz {
-    width: 40%;
-    }
-    .red {
-        background-color: red;
-    }
-    .blue {
-        background-color: blue;
-    }
-    .green {
-        background-color: green;
-    }
-    .violet {
-        background-color: violet;
-    }
+    
   </style>
 
 </head>
 
 <body>
-    <div class="container violet">
-        <div class="float red">float</div>
-        <div class="foo blue">foo</div>
-        <div class="bar green">bar</div>
-        <div class="baz orange">baz</div>
-    </div>
+    <form class="pa4">
+        <fieldset id="favorite_movies" class="bn">
+          <legend class="fw7 mb2">Favorite Movies</legend>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
+            <label for="spacejam" class="lh-copy">Space Jam</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="airbud" value="airbud">
+            <label for="airbud" class="lh-copy">Air Bud</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
+            <label for="hocuspocus" class="lh-copy">Hocus Pocus</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="diehard" value="diehard">
+            <label for="diehard" class="lh-copy">Die Hard</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="primer" value="primer">
+            <label for="primer" class="lh-copy">Primer</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="proxy" value="proxy">
+            <label for="proxy" class="lh-copy">Hudsucker Proxy</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="homealone" value="homealone">
+            <label for="homealone" class="lh-copy">Home Alone</label>
+          </div>
+        </fieldset>
+      </form> 
 
 </body>
 
